@@ -26,37 +26,37 @@ function App() {
   };
   return (
     <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-          Basic Solid Form
-       </header>
-    <div>
-      <form use:formSubmit={fn}>
-        <h1>Sign Up</h1>
-        <div class="field-block">
-        <input
-        name="email"
-        type="email"
-        placeholder="Email"
-        required
-        use:validate={[userNameExists]}
-      />
-      {errors.email && <ErrorMessage error={errors.email} />}
-        </div>
-        <div class="field-block">
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-              required=""
-              minlength="8"
-            onInput={(e) => setFields("password", e.target.value)}
-            use:validate
+        <header class={styles.header}>
+          <img src={logo} class={styles.logo} alt="logo" />
+            Basic Solid Form
+        </header>
+        <div>
+          <form use:formSubmit={fn}>
+            <h1>Sign Up</h1>
+            <div class="field-block">
+            <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+            use:validate={[userNameExists]}
           />
-            {errors.password && <ErrorMessage error={errors.password} />}
-            </div>
+        {errors.email && <ErrorMessage error={errors.email} />}
           </div>
-        </form>
+          <div class="field-block">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+                required=""
+                minlength="8"
+              onInput={(e) => setFields("password", e.target.value)}
+              use:validate
+            />
+              {errors.password && <ErrorMessage error={errors.password} />}
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
