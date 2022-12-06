@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import styles from './App.module.css';
 import './styles';
 import { useForm } from './validation';
+import createCookieStore from "@solid-primitives/cookies-store";
 
 const EMAILS = ['joe@palala.me', 'hey@kuyajoe.dev'];
 
