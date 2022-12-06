@@ -1,0 +1,12 @@
+{
+ "name": "fakebackend",
+ "version": "1.0.0",
+ "scripts": {},
+ "license": "UNLICENSE",
+ "devDependencies": {
+  "json-server": "^0.17.1"
+ },
+ "dependencies": {
+  "jose": "^4.11.1"
+ }
+}

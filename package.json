@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@solid-primitives/cookies-store": "^1.1.11",
+    "jose": "^4.11.1",
     "solid-js": "^1.5.1"
   }
 }
