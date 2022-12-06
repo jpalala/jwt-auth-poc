@@ -1,7 +1,10 @@
 {
  "name": "fakebackend",
  "version": "1.0.0",
- "scripts": {},
+ "scripts": {
+   "start:fakebackend": "json-server data/db.json",
+   "start": "node server.js" 
+ },
  "license": "UNLICENSE",
  "devDependencies": {
   "json-server": "^0.17.1"

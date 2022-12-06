@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "email": "joe@palala.me", "name": "Joe Palala", "password": "sikreto" },
+    { "id": 2, "email": "johndoe@example.com", "name": "John Doe", "password": "password" }
+  ],
+  "posts": [
+    { "id": 1, "title": "something something", "body": "some post", "authorId": 1 }
+  ]
+}
